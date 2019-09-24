@@ -2,7 +2,7 @@
   "app-id": "io.dbeaver.DBeaverCommunity.Client.mariadb",
   "runtime": "io.dbeaver.DBeaverCommunity",
   "runtime-version": "stable",
-  "sdk": "org.gnome.Sdk//3.32",
+  "sdk": "org.freedesktop.Sdk//19.08",
   "build-extension": true,
   "separate-locales": false,
   "appstream-compose": false,
