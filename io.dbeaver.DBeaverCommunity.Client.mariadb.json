@@ -38,6 +38,10 @@
         {         
           "type": "file",
           "path": "io.dbeaver.DBeaverCommunity.Client.mariadb.metainfo.xml"
+        },
+        {
+          "type": "patch",
+          "path": "patches/pam.patch"
         }
       ],
       "post-install": [
