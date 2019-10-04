@@ -2,7 +2,7 @@
   "app-id": "io.dbeaver.DBeaverCommunity.Client.mariadb",
   "runtime": "io.dbeaver.DBeaverCommunity",
   "runtime-version": "stable",
-  "sdk": "org.freedesktop.Sdk//18.08",
+  "sdk": "org.freedesktop.Sdk//19.08",
   "build-extension": true,
   "separate-locales": false,
   "appstream-compose": false,
@@ -16,6 +16,7 @@
       "config-opts": [
         "-DBUILD_CONFIG=mysql_release",
         "-DWITHOUT_SERVER:BOOL=ON",
+        "-DWITH_AUTHENTICATION_PAM=OFF",
         "-DIGNORE_AIO_CHECK=ON",
         "-DCMAKE_INSTALL_PREFIX=/app/clients/mariadb/"
       ],
@@ -31,11 +32,16 @@
             "x86_64"
           ],
           "url": "https://github.com/MariaDB/server.git",
-          "tag": "mariadb-10.4.6"
+          "tag": "mariadb-10.4.8",
+          "commit": "4c2464b87d58a43d1292e166bae6720b51f4b000"
         },
         {         
           "type": "file",
           "path": "io.dbeaver.DBeaverCommunity.Client.mariadb.metainfo.xml"
+        },
+        {
+          "type": "patch",
+          "path": "patches/pam.patch"
         }
       ],
       "post-install": [
