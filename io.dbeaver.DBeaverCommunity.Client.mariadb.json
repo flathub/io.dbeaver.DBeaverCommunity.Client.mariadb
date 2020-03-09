@@ -32,8 +32,8 @@
             "x86_64"
           ],
           "url": "https://github.com/MariaDB/server.git",
-          "tag": "mariadb-10.4.8",
-          "commit": "4c2464b87d58a43d1292e166bae6720b51f4b000"
+          "tag": "mariadb-10.5.1",
+          "commit": "6dc46b5a4d8aa5432528745be3174267a9caa74d"
         },
         {         
           "type": "file",
