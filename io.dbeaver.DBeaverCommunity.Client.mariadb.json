@@ -2,7 +2,7 @@
   "app-id": "io.dbeaver.DBeaverCommunity.Client.mariadb",
   "runtime": "io.dbeaver.DBeaverCommunity",
   "runtime-version": "stable",
-  "sdk": "org.freedesktop.Sdk//19.08",
+  "sdk": "org.freedesktop.Sdk//20.08",
   "build-extension": true,
   "separate-locales": false,
   "appstream-compose": false,
@@ -32,7 +32,7 @@
             "x86_64"
           ],
           "url": "https://github.com/MariaDB/server.git",
-          "tag": "mariadb-10.5.1",
+          "tag": "mariadb-10.5.11",
           "commit": "6dc46b5a4d8aa5432528745be3174267a9caa74d"
         },
         {         
