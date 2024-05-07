@@ -11,10 +11,7 @@
       "name": "mysql",
       "buildsystem": "cmake",
       "build-options": {
-        "strip": true,
-        "build-args": [
-          "--share=network"
-        ]
+        "strip": true
       },
       "config-opts": [
         "-DBUILD_CONFIG=mysql_release",
@@ -38,7 +35,19 @@
           "tag": "mariadb-10.11.7",
           "commit": "87e13722a95af5d9378d990caf48cb6874439347"
         },
-        {         
+        {
+          "type": "file",
+          "url": "https://github.com/fmtlib/fmt/archive/refs/tags/8.0.1.zip",
+          "sha256": "6747442c189064b857336007dd7fa3aaf58512aa1a0b2ba76bf1182eefb01025",
+          "dest": "extra/libfmt/src"
+        },
+        {
+          "type": "file",
+          "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.zip",
+          "sha256": "0f2a1403733d1a409e9305996bf8e5ea7f69ed38f38d2bc1e0c0b041ad7a01a9",
+          "dest": "extra/pcre2/src"
+        },
+        {
           "type": "file",
           "path": "io.dbeaver.DBeaverCommunity.Client.mariadb.metainfo.xml"
         },
