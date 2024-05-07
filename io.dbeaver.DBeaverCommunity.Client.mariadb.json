@@ -33,7 +33,8 @@
           ],
           "url": "https://github.com/MariaDB/server.git",
           "tag": "mariadb-10.11.7",
-          "commit": "87e13722a95af5d9378d990caf48cb6874439347"
+          "commit": "87e13722a95af5d9378d990caf48cb6874439347",
+          "disable-shallow-clone": true
         },
         {
           "type": "file",
