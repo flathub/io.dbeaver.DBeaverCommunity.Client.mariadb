@@ -2,7 +2,7 @@
   "app-id": "io.dbeaver.DBeaverCommunity.Client.mariadb",
   "runtime": "io.dbeaver.DBeaverCommunity",
   "runtime-version": "stable",
-  "sdk": "org.freedesktop.Sdk//20.08",
+  "sdk": "org.freedesktop.Sdk//23.08",
   "build-extension": true,
   "separate-locales": false,
   "appstream-compose": false,
@@ -32,10 +32,23 @@
             "x86_64"
           ],
           "url": "https://github.com/MariaDB/server.git",
-          "tag": "mariadb-10.5.11",
-          "commit": "6dc46b5a4d8aa5432528745be3174267a9caa74d"
+          "tag": "mariadb-10.11.7",
+          "commit": "87e13722a95af5d9378d990caf48cb6874439347",
+          "disable-shallow-clone": true
         },
-        {         
+        {
+          "type": "file",
+          "url": "https://github.com/fmtlib/fmt/archive/refs/tags/8.0.1.zip",
+          "sha256": "6747442c189064b857336007dd7fa3aaf58512aa1a0b2ba76bf1182eefb01025",
+          "dest": "extra/libfmt/src"
+        },
+        {
+          "type": "file",
+          "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.zip",
+          "sha256": "0f2a1403733d1a409e9305996bf8e5ea7f69ed38f38d2bc1e0c0b041ad7a01a9",
+          "dest": "extra/pcre2/src"
+        },
+        {
           "type": "file",
           "path": "io.dbeaver.DBeaverCommunity.Client.mariadb.metainfo.xml"
         },
